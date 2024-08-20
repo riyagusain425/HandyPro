@@ -1,218 +1,177 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.navbar{
-    
-    display:flex;
-    flex-direction:row;
+.navbar {
+    display: flex;
+    flex-direction: column;
     position: sticky;
-    top:0;
+    top: 0;
+    background-color: rgb(85, 2, 85);
+    z-index: 1000; 
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
     cursor: pointer;
 }
-.leftnav{
-    width:100%;
-    display:flex;
-    column-gap:40%;
-    background-color:rgb(85, 2, 85);
-    height:80px;
-    column-gap:40px;
-    text-align:center;
-    
+
+.leftnav {
+    display: flex;
+    list-style: none;
 }
 
-.leftnav li{
-    list-style-type:none;
-    margin-top:30px;
-    
-    
+.leftnav li {
+    margin-left: 20px;
 }
-.leftnav li a{
-    width:30px;
-    color:white;
-    
+
+.leftnav li a {
+    color: white;
     text-decoration: none;
 }
-.leftnav li a:hover{
-    color:rgb(234, 234, 139);
+
+.leftnav li a:hover {
+    color: rgb(234, 234, 139);
 }
 
-.rightnav{
-    width:100%;
-    display:flex;
-    align-items: right;
-    justify-content: right;
-    background-color:rgb(85, 2, 85);
-    
-}
-#search{
-    height:30px;
-    margin-top:20px;
-    border:2px solid rgb(85, 2, 85);
-
+.rightnav {
+    display: flex;
+    align-items: center;
 }
 
-.btn{
-    height:33px;
-    width:80px;
-    margin-top:20px;
-    border:2px solid  rgb(85, 2, 85);
+#search {
+    height: 30px;
+    border: 2px solid rgb(85, 2, 85);
 }
 
-.logo{
-    display:flex;
-    width:80px;
-    height:80px;
+.btn {
+    height: 33px;
+    width: 80px;
+    border: 2px solid rgb(85, 2, 85);
+    background-color: white;
+    cursor: pointer;
 }
 
-.logo img{
-    width:80px;
-    height:70px;
-    border:2px solid rgb(248, 248, 221);
-    border-radius:80px;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-
-.section{
-    display:flex;
-    flex-direction:column;
-    height:100vh;
+.logo img {
+    width: 80px;
+    height: 70px;
+    border: 2px solid rgb(248, 248, 221);
+    border-radius: 80px;
 }
 
-.firsthalf{
-     height:100%;
-    width:100%;
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.firsthalf {
     text-align: center;
-    background-color:rgb(118, 67, 118);
-
-    
-}
-.firsthalf h2{
-    margin-top:20px;
-    color:white;
-    
+    background-color: rgb(118, 67, 118);
+    padding: 20px;
 }
 
-.grid-container{
-    display:grid;
-    grid-template-columns:auto auto auto auto;
-    margin: 30px;
-    padding:20px;
+.firsthalf h2 {
+    color: white;
 }
 
-.grid-items{
-    margin:10px;
-    padding:10px;
-    justify-content: center;
-    width:30%;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
 }
-.grid-items img{
-    height:100px;
-     width:100px;
-    border-radius:100px;
+
+.grid-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
-.grid-items p{
-    color:white;
-    text-align:center;
-    font-size: x-large;
+
+.grid-items img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
-.firsthalf button{
-    height:40px;
-    width:100px;
-    margin-bottom:10px;
+
+.grid-items p {
+    color: white;
+    font-size: large;
+}
+
+.firsthalf button {
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
     background-color: rgb(44, 149, 241);
-    color:white;
-    border:none;
-    font-size:15px;
-
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
 }
 
-.firsthalf button:hover{
-    background-color:rgb(34, 167, 43);
+.firsthalf button:hover {
+    background-color: rgb(34, 167, 43);
 }
 
-
-.secondhalf{
-    height:100%;
-    width:100%;
-    background-color:rgb(235, 178, 239);
-    
+.secondhalf {
+    background-color: rgb(235, 178, 239);
 }
 
-.end{
-    color:rgb(85, 2, 85);
-    text-align:center;
-    justify-content: center;
-    padding:10px 0;
-    margin-bottom:0;
+.end {
+    color: rgb(85, 2, 85);
+    text-align: center;
+    padding: 10px 0;
 }
-.social{
-    background-color:rgb(237, 200, 239);
+
+.social {
+    background-color: rgb(237, 200, 239);
+    display: flex;
     align-items: center;
     justify-content: center;
-    width:100%;
-    height:400px;
-    /* height:300px; */
+    width: 100%;
+    height: 400px;
 }
-.social-media{
-    display:flex;
-    width:200px;
-    height:200px;
-    margin:auto;
-    background-color:rgb(237, 200, 239);
-    align-items: center;
+
+.social-media {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
 }
 
 .fa {
     padding: 20px;
     font-size: 30px;
-    margin:0 50px 0 50px;
-    width: 20px;
-    height:10px;
-    font-size:larger;
+    margin: 0 10px;
     text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
+}
+
+.fa:hover {
     opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin, .fa-whatsapp {
     background: rgb(156, 121, 158);
     color: white;
-    margin:30px;
-    padding:20px;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: rgb(156, 121, 158);
-    color: white;
-    margin:30px;
-    padding:20px;
-  }
-  .fa-instagram {
-    background: rgb(156, 121, 158);
-    color: white;
-    margin:30px;
-    padding:20px;
-  }
-  .fa-linkedin {
-    background: rgb(156, 121, 158);
-    color: white;
-    margin:30px;
-    padding:20px;
-  }
-  
-  .fa-whatsapp {
-    background: rgb(156, 121, 158);
-    color: white;
-    margin:30px;
-    padding:20px;
-  }
+}
