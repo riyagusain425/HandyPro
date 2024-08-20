@@ -1,14 +1,13 @@
 @media only screen and (max-width: 600px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         padding: 0;
+        height:70px;
+        width:100%;
     }
 
-    .navbar-content {
-        width: 100%;
-    }
-
+    
     .menu-icon {
         display: block;
         font-size: 30px;
@@ -47,12 +46,14 @@
     .rightnav {
         display: flex;
         width: 100%;
-        justify-content: center;
-        margin-bottom: 10px;
+        height:70px;
+        justify-content:right;
+        
     }
 
     #search {
         height: 20px;
+        width:90px;
         margin-top: 0;
     }
 
