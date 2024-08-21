@@ -5,19 +5,20 @@
 
 .navbar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: sticky;
     top: 0;
     background-color: rgb(85, 2, 85);
     z-index: 1000; 
+    align-items: center;
 }
 
 .navbar-content {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content:left;
     padding: 10px;
-    width: 50%;
+    width: 100%;
 }
 .rightnav{
     width: 50%;
@@ -37,7 +38,7 @@
     display: flex;
     list-style: none;
     justify-content: left;
-    align-items:left;
+    align-items: left;
 }
 
 .leftnav li {
@@ -56,9 +57,8 @@
 
 .rightnav {
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: right;
-
 }
 
 #search {
@@ -96,7 +96,7 @@
     text-align: center;
     background-color: rgb(118, 67, 118);
     padding: 20px;
-    border:30px solid white;
+    border: 30px solid white;
 }
 
 .firsthalf h2 {
@@ -131,7 +131,7 @@
     height: 40px;
     width: 100px;
     margin-top: 10px;
-    background-color: rgb(44, 149, 241);
+    background-color: rgb(44, 149,241);
     color: white;
     border: none;
     font-size: 15px;
